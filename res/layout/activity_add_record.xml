@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_add_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- 🔵 Top Bar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1976D2"
+            app:title="Add Record"
+            app:titleTextColor="@android:color/white"
+
+            app:navigationIconTint="@android:color/white" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- 🧍 Patient Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient Information"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etPatientName"
+            android:hint="Patient Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etPatientAge"
+            android:hint="Patient Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:inputType="number"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 🧪 Trial Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trial Information"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etTrialName"
+            android:hint="Trial Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etTrialPhase"
+            android:hint="Trial Phase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etEnrollmentDate"
+            android:hint="Enrollment Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:inputType="date"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etDosage"
+            android:hint="Dosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etStartingWeight"
+            android:hint="Starting Weight (lbs)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:inputType="text"
+            android:layout_marginBottom="10dp" />
+
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 💊 Side Effects -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Side Effects"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etSideEffect"
+            android:hint="Side Effect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/spinnerSeverity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etSideEffectDate"
+            android:hint="Side Effect Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:inputType="date"
+            android:layout_marginBottom="10dp" />
+
+        <!-- 📝 Notes -->
+        <EditText
+            android:id="@+id/etNotes"
+            android:hint="Additional Notes"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 🔘 Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSaveRecord"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Save Record"
+                android:backgroundTint="#1976D2"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:backgroundTint="#B0BEC5"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+

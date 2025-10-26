@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2"/>
+
+    <TextView
+        android:id="@+id/tvPatientTrial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trial Name"
+        android:textSize="15sp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/tvPatientStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textColor="#666666"/>
+
+    <!-- View Report Button -->
+    <Button
+        android:id="@+id/btnViewReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Report"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Delete Button (UI only for now) -->
+    <Button
+        android:id="@+id/btnDeletePatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:backgroundTint="#D32F2F"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="6dp"/>
+
+</LinearLayout>
+

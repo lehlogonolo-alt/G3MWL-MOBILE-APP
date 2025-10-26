@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8FAFB"
+    tools:context=".PatientsActivity">
+
+    <!-- 🔵 Top App Bar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1976D2"
+        app:title="Patient Records"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="@android:color/white" />
+
+    <!-- 🔍 Search bar -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewPatients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search patients by name..."
+        android:iconifiedByDefault="false"
+        android:layout_margin="12dp" />
+    <!-- 🔘 Add New Record section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add New Record"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddRecordActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Add Record"
+            android:src="@drawable/ic_add"
+            android:tint="@android:color/white"
+            app:backgroundTint="#1976D2"/>
+    </LinearLayout>
+
+    <!-- 📋 Patients list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPatients"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+</LinearLayout>
+
+
+

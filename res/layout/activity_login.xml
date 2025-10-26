@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F5F6FA"
+    android:padding="24dp">
+
+    <!-- Card-like login container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:elevation="4dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="40dp"
+        android:gravity="center"
+        android:backgroundTintMode="src_in"
+        android:background="@drawable/card_bg">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/tvAppName"
+            android:text="G3MWL"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#007BFF"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/tvLoginTitle"
+            android:text="Login to your account"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_bg"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_bg"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <!-- Remember Me -->
+        <CheckBox
+            android:id="@+id/chkRemember"
+            android:text="Remember Me"
+            android:textColor="#555"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Log In"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#007BFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <!-- Social Login Icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:weightSum="2">
+
+            <!-- Google Login -->
+            <ImageView
+                android:id="@+id/ivGoogleLogin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/icon_circle_bg"
+                android:src="@drawable/ic_google"
+                android:contentDescription="Login with Google"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Biometric Login -->
+            <ImageView
+                android:id="@+id/ivBiometricLogin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/icon_circle_bg"
+                android:src="@drawable/ic_biometric"
+                android:contentDescription="Login with Biometrics"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Register Link -->
+        <TextView
+            android:id="@+id/tvRegisterLink"
+            android:text="Don't have an account? Register"
+            android:textColor="#007BFF"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

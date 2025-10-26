@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top App Bar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/detailTopAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1976D2"
+            android:title="Patient Details"
+            android:titleTextColor="@android:color/white"
+            app:navigationIcon="@drawable/ic_arrow_back" />
+
+        <!-- Patient Details Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvPatientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: John Doe"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvPatientAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age: 35"
+                android:textStyle="bold"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvPatientGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender: Male"
+                android:textStyle="bold"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvTreatmentStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Treatment Start Date: 2025-01-01"
+                android:textStyle="bold"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvStartingWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Starting Weight: 180 lbs"
+                android:textStyle="bold"
+                android:paddingBottom="12dp" />
+
+            <!-- Weekly Reports Subheading -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weekly Reports"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <!-- Weekly Reports Table -->
+            <TableLayout
+                android:id="@+id/tableWeeklyReports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="#e0e0e0"
+                android:padding="4dp">
+
+                <!-- Table Header -->
+                <TableRow
+                    android:background="#b0bec5"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:text="Week#"
+                        android:textStyle="bold"
+                        android:padding="4dp"/>
+                    <TextView
+                        android:text="Weight"
+                        android:textStyle="bold"
+                        android:padding="4dp"/>
+                    <TextView
+                        android:text="Dosage"
+                        android:textStyle="bold"
+                        android:padding="4dp"/>
+                    <TextView
+                        android:text="SideEffects"
+                        android:textStyle="bold"
+                        android:padding="4dp"/>
+                    <TextView
+                        android:text="Weight Loss"
+                        android:textStyle="bold"
+                        android:padding="4dp"/>
+                    <TextView
+                        android:text="Notes"
+                        android:textStyle="bold"
+                        android:padding="4dp"/>
+                </TableRow>
+
+                <!-- Sample Data Row (replace with dynamic rows in code) -->
+                <TableRow
+                    android:padding="4dp">
+                    <TextView android:text="1" android:padding="4dp"/>
+                    <TextView android:text="178 lbs" android:padding="4dp"/>
+                    <TextView android:text="50mg" android:padding="4dp"/>
+                    <TextView android:text="Nausea" android:padding="4dp"/>
+                    <TextView android:text="2 lbs" android:padding="4dp"/>
+                    <TextView android:text="Feeling good" android:padding="4dp"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <!-- New Report Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="New Report"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnAddReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:backgroundTint="#1976D2"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+

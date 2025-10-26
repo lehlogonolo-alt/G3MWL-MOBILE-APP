@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Report"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <!-- Current Weight -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Weight (lbs)"
+            android:paddingTop="8dp"/>
+        <EditText
+            android:id="@+id/etCurrentWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Enter weight"/>
+
+        <!-- Dosage -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dosage (mg)"
+            android:paddingTop="8dp"/>
+        <EditText
+            android:id="@+id/etDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter dosage"/>
+
+        <!-- Weight Lost This Week -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight Lost This Week (lbs)"
+            android:paddingTop="8dp"/>
+        <EditText
+            android:id="@+id/etWeightLost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Enter weight lost"/>
+
+        <!-- Side Effects -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Side Effects"
+            android:paddingTop="8dp"/>
+        <EditText
+            android:id="@+id/etSideEffects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter side effects"/>
+
+        <!-- Notes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:paddingTop="8dp"/>
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter notes"/>
+
+        <!-- Buttons -->
+
+
+
+    </LinearLayout>
+</ScrollView>

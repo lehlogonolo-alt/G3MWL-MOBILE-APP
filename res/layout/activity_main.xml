@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- App Title at the center -->
+    <TextView
+        android:id="@+id/tvSplashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G3MWL"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <!-- App Icon below the title -->
+    <ImageView
+        android:id="@+id/ivSplashIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/app_name"
+        android:layout_below="@id/tvSplashTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>
